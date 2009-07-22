@@ -33,7 +33,10 @@ function updateLinks(doc) {
 
 jetpack.tabs.onReady(function(doc) {
   updateLinks(doc);
+
+  /* Should work, but doesn't.
   $(doc).find('body').ajaxStop(function() {
-    alert('test');
+    updateLinks(doc);
   });
+  */
 });
